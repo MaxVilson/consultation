@@ -1,14 +1,48 @@
-<!--DEV
+			<!--DEV
 
-Нужно убрать пробел между @-ами:
+			Нужно убрать пробел между @-ами:
 
-@ @include('blocks/page-header/page-header.html')
+			@ @include('blocks/page-header/page-header.html')
 
--->
+		-->
 <header class="page-header">
-  <div class="container">
-  	<a href="/" class="logo">
-  		<img src="img/logo.png" alt="logo">
-		</a>
-  </div>
+	<div class="container">
+		<div class="page-header__wrapper">
+			<a href="/" class="logo  page-header__logo">
+				<img src="img/logo.png" alt="logo">
+        <div class="logo__text">Казахская экспертиза<br> проектов</div>
+			</a>
+			<nav id="main-nav" class="main-nav" role="navigation">
+				<div id="main-nav-toggler" class="main-nav__toggler  burger">
+					<span></span>
+				</div>
+				<ul class="main-nav__list">
+					<li class="main-nav__item  main-nav__item--active">
+						<a href="" class="main-nav__link">
+							Главная
+						</a>
+					</li>
+					<li class="main-nav__item">
+						<a href="https://github.com/nicothin/NTH-start-project" class="main-nav__link">
+							О Компании
+						</a>
+					</li>
+					<li class="main-nav__item">
+						<a href="http://nicothin.pro/" class="main-nav__link">
+							Услуги
+						</a>
+					</li>
+					<li class="main-nav__item  main-nav__item--last">
+						<a href="http://nicothin.pro/" class="main-nav__link">
+							Контакты
+						</a>
+					</li>
+					<div class="main-nav__call">
+						<a href="tel:+87076404775" class="main-nav__tel">8 707 640 47 75</a>
+						<button class="btn  btn--feedback  main-nav__btn">Заказать звонок</button>
+					</div>
+				</ul>
+			</nav>
+		</div>
+	</div>
 </header>

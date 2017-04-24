@@ -9,12 +9,12 @@
     ],
     "page-header": [],
     "page-footer": [],
-    "main-nav": [],
     "logo": [],
     "code": [],
     "thumb": [],
     "alert": [],
     "btn": [],
+    "main-nav": [],
     "to-top": [],
     "field-text": [
       "--error"
@@ -53,7 +53,8 @@
     "media": [],
     "modal": [],
     "close": [],
-    "tabs": []
+    "tabs": [],
+    "container": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

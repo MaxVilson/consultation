@@ -11,7 +11,7 @@ $screen-lg:                   992px !default;
 $screen-xl:                   1200px !default;
 $screen-xxl:                  1800px !default;
 
-$menu-desktop-width:          $screen-xl !default;
+$menu-desktop-width:          $screen-md;
 $toggler-part-height:         3px !default;
 $toggler-part-bg-color:       #000 !default;
 
@@ -23,13 +23,15 @@ $transition-time:             0.3s !default;
 
   position: relative;
   z-index: 10;
-
+  width: 100%;
 
 
   // первый уровень
 
   &__list {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 72px;
     padding: 0;
     list-style: none;
 
@@ -49,6 +51,16 @@ $transition-time:             0.3s !default;
       }
     }
 
+    @media (max-width: ($screen-xl)) {
+
+      .main-nav {
+
+        &__list {
+          margin-left: 50px;
+        }
+      }
+    }
+
     @media (min-width: $menu-desktop-width) {
       display: flex;
       flex-wrap: wrap;
@@ -57,20 +69,27 @@ $transition-time:             0.3s !default;
 
   &__item {
     position: relative;
+    margin-right: 39px;
+
+    &--last {
+      margin-right: 0;
+    }
 
     &--active {}
   }
 
   &__link {
     display: block;
-    padding: 0.5em;
+    margin-top: 37px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $white;
+    font-size: px-to-em(20);
     text-decoration: none;
-    background-color: #fff;
 
     &:hover,
     &:focus {
       text-decoration: none;
-      background-color: $gray-lightest;
     }
 
     &--lvl-2 {
@@ -133,11 +152,40 @@ $transition-time:             0.3s !default;
     }
   }
 
+  &__call {
+    margin-top: 30px;
+    margin-left: auto;
+  }
+
+  &__tel {
+    position: relative;
+    padding-left: 25px;
+    font-size: px-to-em(24);
+    text-decoration: none;
+    color: $white;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      content: '';
+      width: 20px;
+      height: 20px;
+      @include sprite($phone);
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin-top: 9px;
+    margin-left: auto;
+  }
 
 
   // переключатель
 
   &__toggler {
+    margin-top: 22px;
+    margin-left: auto;
 
     .no-js & {
       display: none;

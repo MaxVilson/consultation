@@ -3,6 +3,15 @@
 // Не пишите здесь другие селекторы.
 
 .logo {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-decoration: none;
   white-space: nowrap;
+
+  &__text {
+    width: 100%;
+    text-align: center;
+    color: $white;
+  }
 }

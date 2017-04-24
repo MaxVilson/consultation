@@ -3,5 +3,16 @@
 // Не пишите здесь другие селекторы.
 
 .page-header {
+  height: 100vh;
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
+  &__wrapper {
+    display: flex;
+  }
+
+  &__logo {
+    margin-top: 9px;
+  }
 }
