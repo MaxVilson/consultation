@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Казахская экспертиза проектов</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+  <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      <header class="page-header">
+      	<div class="container">
+      		<div class="page-header__wrapper">
+      			<a href="/" class="logo  page-header__logo">
+      				<picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="img/logo_sm.png">
+                <img src="img/logo.png" alt="logo">
+              </picture>
+              <div class="logo__text">Казахская экспертиза<br> проектов</div>
+      			</a>
+      			<nav id="main-nav" class="main-nav" role="navigation">
+      				<div id="main-nav-toggler" class="main-nav__toggler  burger">
+      					<span></span>
+      				</div>
+      				<ul class="main-nav__list">
+      					<li class="main-nav__item">
+      						<a href="" class="main-nav__link">
+      							Главная
+      						</a>
+      					</li>
+      					<li class="main-nav__item">
+      						<a href="https://github.com/nicothin/NTH-start-project" class="main-nav__link">
+      							О Компании
+      						</a>
+      					</li>
+      					<li class="main-nav__item">
+      						<a href="http://nicothin.pro/" class="main-nav__link">
+      							Услуги
+      						</a>
+      					</li>
+      					<li class="main-nav__item  main-nav__item--last">
+      						<a href="http://nicothin.pro/" class="main-nav__link">
+      							Контакты
+      						</a>
+      					</li>
+      					<div class="main-nav__call">
+      						<a href="tel:+87076404775" class="main-nav__tel">8 707 640 47 75</a>
+      						<button class="btn  btn--feedback  main-nav__btn">Заказать звонок</button>
+      					</div>
+      				</ul>
+      			</nav>
+      		</div>
+          <h1 class="page-header__title">Услуги по комплексной вневедомственной экспертизе проектов строительства</h1>
+          <button class="btn  btn--header  page-header__btn">Получить бесплатную консультацию</button>
+      	</div>
+      </header>
+
+
+      <main role="main">
+
+      
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        page-footer
+      </footer>
+
+    </div>
+
+  </div>
+  <script>window.jQuery || document.write('<script src="js/jquery.3.1.1.min.js"><\/script>')</script>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
