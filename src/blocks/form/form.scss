@@ -36,4 +36,18 @@ $line-height:                 1.375em !default;
     margin-top: $line-height;
     margin-bottom: ($line-height / 2);
   }
+
+  &__btn {
+    display: inline-block;
+    margin-left: 99px;
+    margin-top: 13px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    width: 272px;
+
+    &:hover {
+      border: 1px solid $color-red;
+      border-bottom: 2px solid $color-red;
+    }
+  }
 }

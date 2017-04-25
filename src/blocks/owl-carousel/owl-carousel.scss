@@ -2,4 +2,14 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Не пишите здесь другие селекторы.
 
-.owl-carousel {}
+.owl-carousel {
+
+  & div {
+
+    & img {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 282px;
+    }
+  }
+}

@@ -65,7 +65,7 @@ $border-radius:               3px;
     background-color: transparent;
   }
 
-  &--header {
+  &--main {
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -77,7 +77,7 @@ $border-radius:               3px;
     color: $white;
     background: $color-red;
     border: none;
-    border-bottom: 1px solid #ab071b;
+    border-bottom: 2px solid #ab071b;
 
     @media (max-width: ($menu-desktop-width - 1)) {
       padding-right: 15px;

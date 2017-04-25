@@ -52,7 +52,9 @@
     "modal": [],
     "close": [],
     "tabs": [],
-    "container": []
+    "container": [],
+    "certificate": [],
+    "consultation": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

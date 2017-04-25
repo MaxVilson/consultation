@@ -1,11 +1,30 @@
-<!--DEV
-
 <form action="" class="form">
-  <fieldset>
-    <legend>Название формы</legend>
-    <label class="field-text">...</label>
-    <div class="field-actions">...</div>
-  </fieldset>
-</form>
+  <label class="field-text">
+    <span class="field-text__name">Имя</span>
+    <div class="field-text__input-wrap  field-text__input-wrap-name">
+      <input class="field-text__input" type="text" name="name">
+    </div>
+  </label>
 
--->
+  <label class="field-text">
+    <span class="field-text__name">Email</span>
+    <div class="field-text__input-wrap  field-text__input-wrap-email">
+      <input class="field-text__input" type="email" name="email">
+    </div>
+  </label>
+
+  <label class="field-text">
+    <span class="field-text__name">Телефон</span>
+    <div class="field-text__input-wrap  field-text__input-wrap-phone">
+      <input class="field-text__input" type="tel" name="tel">
+    </div>
+  </label>
+
+  <label class="field-text">
+    <span class="field-text__name">Сообщение</span>
+    <div class="field-text__input-wrap  field-text__input-wrap-message">
+      <textarea class="field-text__input"></textarea>
+    </div>
+  </label>
+  <button class="btn btn--main form__btn">Отправить</button>
+</form>
