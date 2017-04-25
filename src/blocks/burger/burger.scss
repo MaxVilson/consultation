@@ -16,7 +16,7 @@
     display: inline-block;
     width: 100%;
     height: $toggler-part-height;
-    background: $white;
+    background: $toggler-part-bg-color;
     border-radius: 5px;
     position: relative;
     transition: background 0.3s 0.3s;
@@ -28,7 +28,7 @@
       left: 0;
       width: 100%;
       height: $toggler-part-height;
-      background: $white;
+      background: $toggler-part-bg-color;
       border-radius: 5px;
       transform-origin: 50% 50%;
       transition: top 0.3s 0.3s, transform 0.3s;

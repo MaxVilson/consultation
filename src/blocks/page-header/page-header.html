@@ -9,7 +9,12 @@
 	<div class="container">
 		<div class="page-header__wrapper">
 			<a href="/" class="logo  page-header__logo">
-				<img src="img/logo.png" alt="logo">
+				<picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="img/logo_sm.png">
+          <img src="img/logo.png" alt="logo">
+        </picture>
         <div class="logo__text">Казахская экспертиза<br> проектов</div>
 			</a>
 			<nav id="main-nav" class="main-nav" role="navigation">
@@ -17,7 +22,7 @@
 					<span></span>
 				</div>
 				<ul class="main-nav__list">
-					<li class="main-nav__item  main-nav__item--active">
+					<li class="main-nav__item">
 						<a href="" class="main-nav__link">
 							Главная
 						</a>
@@ -44,5 +49,7 @@
 				</ul>
 			</nav>
 		</div>
+    <h1 class="page-header__title">Услуги по комплексной вневедомственной экспертизе проектов строительства</h1>
+    <button class="btn  btn--header  page-header__btn">Получить бесплатную консультацию</button>
 	</div>
 </header>

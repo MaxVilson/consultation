@@ -13,5 +13,9 @@
     width: 100%;
     text-align: center;
     color: $white;
+
+    @media (max-width: ($screen-lg)) {
+      font-size: px-to-em(14);
+    }
   }
 }

@@ -2,7 +2,7 @@
 // Не пишите тут какую-либо стороннюю стилизацию.
 
 @font-face {
-  //font-family: 'arialregular', sans-serif;
+  font-family: 'arialregular', sans-serif;
   src: url('arial-webfont.woff2') format('woff2'), url('arial-webfont.woff') format('woff');
   font-weight: 400;
   font-style: normal;
@@ -17,7 +17,7 @@ $font-family--headings:       'arialregular', sans-serif;
 $font-family--monospace:      'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace !default;
 
 $font-size:                   16px;
-$font-size--h1:               3.25em;
+$font-size--h1:               px-to-em(48);
 $font-size--h2:               3em;
 $font-size--h3:               1em;
 $font-size--h4:               1.25em !default;

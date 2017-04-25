@@ -15,7 +15,6 @@ $border-radius:               3px;
 .btn {
   box-sizing: border-box;
   display: inline-block;
-  margin: 0;
   padding: $field-padding-vertical  $field-padding-horizontal;
   white-space: nowrap;
   vertical-align: middle;
@@ -32,13 +31,14 @@ $border-radius:               3px;
   background-color: $gray-lightest;
   background-image: none;
   cursor: pointer;
+  transition: all .3s;
 
   &:hover,
   &:focus {
     text-decoration: none;
-    color: $text-color;
-    background-color: darken($gray-lightest, 10%);
-    border-color: darken($gray-lighter, 12%);
+    color: $color-red;
+    background-color: ($white);
+    border-color: ($white);
   }
 
   &:active,
@@ -63,6 +63,27 @@ $border-radius:               3px;
     font-size: px-to-em(14);
     color: $white;
     background-color: transparent;
+  }
+
+  &--header {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 17px;
+    padding-right: 45px;
+    padding-bottom: 17px;
+    padding-left: 46px;
+    font-size: px-to-em(21);
+    color: $white;
+    background: $color-red;
+    border: none;
+    border-bottom: 1px solid #ab071b;
+
+    @media (max-width: ($menu-desktop-width - 1)) {
+      padding-right: 15px;
+      padding-left: 15px;
+      font-size: px-to-em(14);
+    }
   }
 
 

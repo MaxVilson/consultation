@@ -10,9 +10,26 @@
 
   &__wrapper {
     display: flex;
+    align-items: flex-start;
   }
 
   &__logo {
     margin-top: 9px;
+  }
+
+  &__title {
+    margin-top: 162px;
+    font-weight: 400;
+    text-align: center;
+    color: $white;
+
+    @media (max-width: ($screen-md - 1)) {
+      margin-top: 62px;
+      font-size: px-to-em(20);
+    }
+  }
+
+  &__btn {
+    margin-top: 40px;
   }
 }

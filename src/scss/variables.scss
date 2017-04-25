@@ -16,12 +16,13 @@ $color-main:                  hsl(208, 98%, 43%);
 $color-success:               hsl(120, 39%, 54%);
 $color-danger:                hsl(2, 64%, 58%);
 $color-warning:               hsl(35, 84%, 62%);
+$color-red:                   #f6001d;
 
 
 
 // Семантические цвета
 
-$text-color:                  $gray-darkest;
+$text-color:                  #333333;
 $text-color--muted:           $gray;
 $body-bg:                     #fff;
 
@@ -87,7 +88,7 @@ $transition-time:             0.3s;
 $shadow:                      0 4px 2px -2px rgba(0, 0, 0, 0.3);
 
 $menu-desktop-width:          $screen-xl;
-$toggler-part-height:         3px;
-$toggler-part-bg-color:       #000;
+$toggler-part-height:         4px;
+$toggler-part-bg-color:       #fff;
 
 $z-index-modal:               100;

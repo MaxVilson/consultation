@@ -25,6 +25,9 @@ $transition-time:             0.3s !default;
   z-index: 10;
   width: 100%;
 
+  @media (max-width: ($menu-desktop-width - 1)) {
+    position: inherit;
+  }
 
   // первый уровень
 
@@ -36,7 +39,13 @@ $transition-time:             0.3s !default;
     list-style: none;
 
     @media (max-width: ($menu-desktop-width - 1)) {
-
+      position: absolute;
+      top: 110px;
+      left: 0;
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+      background: $white;
       // открытие/закрытие меню только в случае работающего JS
 
       .js & {
@@ -51,14 +60,8 @@ $transition-time:             0.3s !default;
       }
     }
 
-    @media (max-width: ($screen-xl)) {
-
-      .main-nav {
-
-        &__list {
-          margin-left: 50px;
-        }
-      }
+    @media (min-width: ($screen-md)) and (max-width: ($screen-xl)) {
+      margin-left: 50px;
     }
 
     @media (min-width: $menu-desktop-width) {
@@ -75,11 +78,19 @@ $transition-time:             0.3s !default;
       margin-right: 0;
     }
 
-    &--active {}
+    @media (max-width: ($screen-md - 1)) {
+      margin-right: 0;
+    }
+
+    @media (max-width: ($screen-lg)) {
+      margin-right: 19px;
+    }
   }
 
   &__link {
+    position: relative;
     display: block;
+    overflow: hidden;
     margin-top: 37px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -87,9 +98,40 @@ $transition-time:             0.3s !default;
     font-size: px-to-em(20);
     text-decoration: none;
 
+    &:after {
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 3px;
+      background: $color-red;
+      transition: all .3s;
+
+      @media (max-width: $menu-desktop-width - 1) {
+        display: none;
+      }
+    }
+
     &:hover,
     &:focus {
       text-decoration: none;
+    }
+
+    &:hover:after {
+      transform: translateY(-8px);
+    }
+
+    @media (max-width: ($screen-lg)) {
+      font-size: px-to-em(14);
+    }
+
+    @media (max-width: $menu-desktop-width - 1) {
+      margin-top: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: px-to-em(16);
+      color: $text-color;
     }
 
     &--lvl-2 {
@@ -155,6 +197,10 @@ $transition-time:             0.3s !default;
   &__call {
     margin-top: 30px;
     margin-left: auto;
+
+    @media (max-width: $menu-desktop-width - 1) {
+      margin-top: 10px;
+    }
   }
 
   &__tel {
@@ -163,6 +209,11 @@ $transition-time:             0.3s !default;
     font-size: px-to-em(24);
     text-decoration: none;
     color: $white;
+    transition: all .4s;
+
+    &:hover {
+      color: $color-red;
+    }
 
     &:before {
       position: absolute;
@@ -171,6 +222,20 @@ $transition-time:             0.3s !default;
       width: 20px;
       height: 20px;
       @include sprite($phone);
+
+      @media (max-width: $menu-desktop-width - 1) {
+        top: 6px;
+        @include sprite($phone-dark);
+      }
+    }
+
+    @media (max-width: ($screen-lg)) {
+      font-size: px-to-em(17);
+    }
+
+    @media (max-width: $menu-desktop-width - 1) {
+      padding-left: 15px;
+      color: $text-color;
     }
   }
 
@@ -178,6 +243,14 @@ $transition-time:             0.3s !default;
     display: block;
     margin-top: 9px;
     margin-left: auto;
+
+    @media (max-width: ($screen-md - 1)) {
+      margin-top: 20px;
+      margin-right: auto;
+      margin-bottom: 20px;
+      color: $color-red;
+      border-color: $color-red;
+    }
   }
 
 
