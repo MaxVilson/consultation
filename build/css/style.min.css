@@ -1709,9 +1709,6 @@ a.pagination__item:hover, a.pagination__item:focus {
     margin-left: 1.8em; }
   .container{
     width: 100%; } }
-@media (min-width: 768px) and (max-width: 1200px){
-  .main-nav__list{
-    margin-left: 50px; } }
 @media (min-width: 768px){
   .main-nav__list{
     display: -ms-flexbox;
@@ -1750,6 +1747,12 @@ a.pagination__item:hover, a.pagination__item:focus {
     display: none; }
   .container{
     width: 100%; } }
+@media (min-width: 768px) and (max-width: 992px){
+  .main-nav__item{
+    margin-right: 19px; } }
+@media (min-width: 768px) and (max-width: 1200px){
+  .main-nav__list{
+    margin-left: 50px; } }
 @media (min-width: 992px){
   .modal__dialog{
     width: 600px;
@@ -1773,6 +1776,11 @@ a.pagination__item:hover, a.pagination__item:focus {
 @media (min-width: 1800px){
   .container{
     width: 1770px; } }
+@media (max-width: 1199px){
+  .btn--header{
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 0.875em; } }
 @media (max-width: 767px){
   .page-header__title{
     margin-top: 62px;
@@ -1855,17 +1863,10 @@ a.pagination__item:hover, a.pagination__item:focus {
 @media (max-width: 992px){
   .logo__text{
     font-size: 0.875em; }
-  .main-nav__item{
-    margin-right: 19px; }
   .main-nav__link{
     font-size: 0.875em; }
   .main-nav__tel{
     font-size: 1.0625em; } }
-@media (max-width: 1199px){
-  .btn--header{
-    padding-right: 15px;
-    padding-left: 15px;
-    font-size: 0.875em; } }
 @media print{
   *,
   *:before,
