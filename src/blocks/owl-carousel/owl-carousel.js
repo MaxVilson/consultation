@@ -1,7 +1,6 @@
 $('.owl-carousel').owlCarousel({
     loop:false,
     dots:true,
-    autoHeight: true,
     responsive:{
         10:{
           items:1,
