@@ -49,5 +49,9 @@ $line-height:                 1.375em !default;
       border: 1px solid $color-red;
       border-bottom: 2px solid $color-red;
     }
+
+    @media (max-width: ($screen-md)) {
+      margin-left: 0;
+    }
   }
 }

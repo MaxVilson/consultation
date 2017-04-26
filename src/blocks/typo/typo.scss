@@ -18,7 +18,7 @@ $font-family--monospace:      'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 
 
 $font-size:                   16px;
 $font-size--h1:               px-to-em(48);
-$font-size--h2:               3em;
+$font-size--h2:               px-to-em(48);
 $font-size--h3:               1em;
 $font-size--h4:               1.25em !default;
 $font-size--h5:               1em !default;

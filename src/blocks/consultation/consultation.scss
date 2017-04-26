@@ -3,5 +3,61 @@
 // Не пишите здесь другие селекторы.
 
 .consultation {
-  background: url(../img/consultation.jpg) no-repeat right;
+  margin-top: 110px;
+  background-image: url(../img/consultation.jpg);
+  background-repeat: no-repeat;
+  background-position: 400px 0;
+
+  @media (max-width: ($screen-md)) {
+    background-image: url(../img/consultation_s.jpg);
+    background-position: 0 0;
+    background-size: cover;
+  }
+
+  @media (max-width: ($screen-lg)) {
+    background-image: url(../img/consultation_m.jpg);
+    background-position: right;
+  }
+
+  @media (min-width: ($screen-lg)) and (max-width: (1230px)) {
+    background-position: 300px 0;
+  }
+
+  @media (min-width: (1400px)) {
+    background-position: right;
+  }
+
+  &__wrapper {
+    padding-top: 80px;
+    padding-bottom: 130px;
+    width: 380px;
+
+    @media (max-width: ($screen-md)) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 37px;
+
+    & span {
+      font-size: 59px;
+      line-height: 30px;
+
+      @media (max-width: ($screen-md)) {
+        font-size: 32px;
+      }
+    }
+
+    @media (max-width: ($screen-md)) {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 23px;
+  }
 }

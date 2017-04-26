@@ -25,13 +25,21 @@ $border-radius:               3px !default;
     font-size: 16px;
     line-height: $line-height;
     font-weight: 700;
+
+    @media (max-width: ($screen-md)) {
+      display: block;
+    }
   }
 
   &__input-wrap {
     display: block;
 
-    @media (min-width: ($menu-desktop-width)) {
+    @media (min-width: ($screen-md)) {
       display: inline-block;
+    }
+
+    @media (max-width: ($screen-md)) {
+      margin: 0;
     }
   }
 
@@ -98,9 +106,9 @@ $border-radius:               3px !default;
     @at-root textarea#{&} {
       $textarea-height: ($line-height * 2) + ($field-padding-vertical * 2);
 
-      height: auto;
+      height: 73px;
       min-height: calc(#{$textarea-height} + 2px);
-      resize: vertical;
+      resize: none;
     }
   }
 

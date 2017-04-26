@@ -76,7 +76,7 @@ $border-radius:               3px;
     font-size: px-to-em(21);
     color: $white;
     background: $color-red;
-    border: none;
+    border: 1px solid transparent;
     border-bottom: 2px solid #ab071b;
 
     @media (max-width: ($menu-desktop-width - 1)) {
