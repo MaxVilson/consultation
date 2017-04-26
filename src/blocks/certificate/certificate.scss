@@ -15,6 +15,7 @@
   }
 
   &__title {
+    text-align: center;
 
     @media (max-width: ($menu-desktop-width - 1)) {
       font-size: 1.22em;

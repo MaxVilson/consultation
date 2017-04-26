@@ -59,6 +59,10 @@ $z-index-modal:               100 !default;
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
     min-width: 100%;
     min-height: 100%;
     background-color: #fff;
@@ -73,10 +77,14 @@ $z-index-modal:               100 !default;
   &__title {
     margin-top: ($line-height / 2);
     margin-bottom: ($line-height / 2);
-    font-size: $font-size--h4;
+    font-size: 30px;
     line-height: 1.4;
-    font-weight: 700;
+    font-weight: 400;
     color: currentColor;
+
+    & div {
+      font-size: 16px;
+    }
   }
 
   &__close {

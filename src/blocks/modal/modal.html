@@ -9,4 +9,34 @@
 
 -->
 
-<div class="modal">content</div>
+<div id="modal-demo-01" class="modal" tabindex="-1" role="dialog">
+  <div class="modal__dialog" role="document">
+    <div class="modal__content">
+      <div class="modal__header">
+        <span class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+        <h4 class="modal__title">
+          Закажите обратный звонок
+          <div>и наш менеджер свяжится с Вами в ближайшее время</div>
+        </h4>
+      </div>
+      <div class="modal__body">
+        <form action="b.php" class="form">
+          <label class="field-text">
+            <span class="field-text__name">Имя</span>
+            <div class="field-text__input-wrap  field-text__input-wrap-name">
+              <input class="field-text__input" type="text" name="name">
+            </div>
+          </label>
+
+          <label class="field-text">
+            <span class="field-text__name">Телефон</span>
+            <div class="field-text__input-wrap  field-text__input-wrap-phone">
+              <input class="field-text__input" type="tel" name="tel">
+            </div>
+          </label>
+          <button type="submit" class="btn btn--main form__btn">Заказать звонок</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

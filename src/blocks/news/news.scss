@@ -1,0 +1,51 @@
+// В этом файле должны быть стили только для БЭМ-блока news, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Не пишите здесь другие селекторы.
+
+.news {
+  text-align: center;
+  background-color: #f3f3f3;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (min-width: ($screen-xs)) and (max-width: ($screen-lg)) {
+      justify-content: space-around;
+    }
+  }
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    & img {
+
+    }
+  }
+
+  &__text {
+    width: 260px;
+    font-size: 16px;
+    color: $text-color;
+  }
+
+  &__item-link {
+    color: #00c4f6;
+  }
+
+  &__date {
+    float: right;
+    clear: both;
+    font-size: 14px;
+    font-style: italic;
+    color: #777;
+  }
+}

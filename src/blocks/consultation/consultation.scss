@@ -9,8 +9,8 @@
   background-repeat: no-repeat;
   background-position: 400px 0;
 
-  @media (max-width: ($screen-md)) {
-    background-image: url(../img/consultation_s.jpg);
+  @media (min-width: ($screen-xs)) and (max-width: ($screen-md)) {
+    background-image: url(../img/consultation_s.jpg) !important;
     background-position: 0 0;
     background-size: cover;
 
@@ -50,6 +50,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-top: 0;
+      padding-bottom: 48px;
       width: 100%;
     }
   }
@@ -67,6 +69,7 @@
     }
 
     @media (max-width: ($screen-md)) {
+      align-self: flex-start;
       font-size: 20px;
     }
   }

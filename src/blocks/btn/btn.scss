@@ -86,6 +86,17 @@ $border-radius:               3px;
     }
   }
 
+  &--footer {
+    color: $color-red;
+    background-color: transparent;
+    border: 1px solid $color-red;
+
+    &:hover {
+      color: $white;
+      background: $color-red;
+    }
+  }
+
 
 
   // &--main {

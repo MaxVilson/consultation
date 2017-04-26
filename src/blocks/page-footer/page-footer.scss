@@ -4,4 +4,120 @@
 
 .page-footer {
 
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+
+    @media (max-width: ($screen-sm)) {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+    }
+  }
+
+  &__wrapper-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10%;
+    width: 60%;
+
+    @media (max-width: ($screen-lg)) {
+      flex-direction: column;
+      align-items: flex-end;
+      margin-left: 0;
+    }
+
+    @media (max-width: ($screen-sm)) {
+      align-items: center !important;
+      margin-top: 40px;
+      width: 100%;
+    }
+  }
+
+  &__logo {
+    width: 30%;
+
+    @media (max-width: ($screen-sm)) {
+      width: 100%;
+      text-align: center;
+    }
+
+    span {
+      @media (max-width: ($screen-lg)) {
+        display: block;
+      }
+    }
+  }
+
+  &__mail {
+    width: 150px;
+
+    @media (max-width: ($screen-lg)) {
+      margin-bottom: 20px;
+      width: 220px;
+    }
+  }
+
+  &__mail-title {
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: 600;
+  }
+
+  &__adress {
+    width: 220px;
+
+    @media (max-width: ($screen-lg)) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__adress-title {
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: 600;
+  }
+
+  &__phone {
+    width: 150px;
+
+    @media (max-width: ($screen-lg)) {
+      margin-bottom: 20px;
+      width: 220px;
+    }
+  }
+
+  &__phone-title {
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: 600;
+  }
+
+  &__phone-tel {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: $text-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__btn {
+    background-color: transparent;
+    border-color: $color-red;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #777;
+    border-top: 1px solid #e3e1e1;
+  }
 }

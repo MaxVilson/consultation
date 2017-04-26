@@ -84,7 +84,7 @@
                 </li>
                 <div class="main-nav__call">
                   <a href="tel:+87076404775" class="main-nav__tel">8 707 640 47 75</a>
-                  <button class="btn  btn--feedback  main-nav__btn">Заказать звонок</button>
+                  <button class="btn  btn--feedback  main-nav__btn" data-toggle="modal" data-target="#modal-demo-01">Заказать звонок</button>
                 </div>
               </ul>
             </nav>
@@ -127,7 +127,7 @@
                 Оставьте Ваши данные и наш менеджер свяжется с Вами в ближайшее время
               </p>
 
-              <form action="" class="form">
+              <form action="a.php" class="form">
                 <label class="field-text">
                   <span class="field-text__name">Имя</span>
                   <div class="field-text__input-wrap  field-text__input-wrap-name">
@@ -155,11 +155,100 @@
                     <textarea class="field-text__input"></textarea>
                   </div>
                 </label>
-                <button class="btn btn--main form__btn">Отправить</button>
+                <button type="submit" class="btn btn--main form__btn">Отправить</button>
               </form>
 
 
             </div>
+          </div>
+        </section>
+
+        <section class="about-us">
+          <div class="container">
+            <h2 class="about-us__title">О нашей компании</h2>
+            <div class="about-us__img">
+              <img src="img/about-us.jpg" alt="about us">
+            </div>
+            <div class="about-us__text-wrapper">
+              <p class="about-us__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+              </p>
+              <a href="#" class="about-us__link">Читать дальше</a>
+              <p class="about-us__text  about-us__text--hidden">
+                C Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+              </p>
+              <p class="about-us__text  about-us__text--hidden">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="clients">
+          <div class="container">
+            <h2 class="clients__title">Наши клиенты</h2>
+            <ul class="clients__list">
+              <li class="clients__item"><img src="img/client1.png" alt="client"></li>
+              <li class="clients__item"><img src="img/client2.png" alt="client"></li>
+              <li class="clients__item"><img src="img/client3.png" alt="client"></li>
+              <li class="clients__item"><img src="img/client4.png" alt="client"></li>
+              <li class="clients__item"><img src="img/client5.png" alt="client"></li>
+              <li class="clients__item"><img src="img/client6.png" alt="client"></li>
+              <li class="clients__item"><img src="img/client7.png" alt="client"></li>
+              <li class="clients__item"><img src="img/client8.png" alt="client"></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="news">
+          <div class="container">
+            <h2 class="news__title">Новости</h2>
+            <ul class="news__list">
+              <li class="news__item">
+                <a href="#" class="news__link">
+                  <img src="img/news1.jpg" alt="news">
+                  <h3 class="news__text">
+                    Компания стала полноправным Членом «Палаты экспертных организаций РК».
+                  </h3>
+                  <a href="#" class="news__item-link">Подробнее</a>
+                  <span class="news__date">09 февраля 2016 года</span>
+                </a>
+              </li>
+
+              <li class="news__item">
+                <a href="#" class="news__link">
+                  <img src="img/news2.jpg" alt="news">
+                  <h3 class="news__text">
+                    Компания стала полноправным Членом «Палаты экспертных организаций РК».
+                  </h3>
+                  <a href="#" class="news__item-link">Подробнее</a>
+                  <span class="news__date">09 февраля 2016 года</span>
+                </a>
+              </li>
+
+              <li class="news__item">
+                <a href="#" class="news__link">
+                  <img src="img/news3.jpg" alt="news">
+                  <h3 class="news__text">
+                    Компания стала полноправным Членом «Палаты экспертных организаций РК».
+                  </h3>
+                  <a href="#" class="news__item-link">Подробнее</a>
+                  <span class="news__date">09 февраля 2016 года</span>
+                </a>
+              </li>
+
+              <li class="news__item">
+                <a href="#" class="news__link">
+                  <img src="img/news4.jpg" alt="news">
+                  <h3 class="news__text">
+                    Компания стала полноправным Членом «Палаты экспертных организаций РК».
+                  </h3>
+                  <a href="#" class="news__item-link">Подробнее</a>
+                  <span class="news__date">09 февраля 2016 года</span>
+                </a>
+              </li>
+
+            </ul>
           </div>
         </section>
 
@@ -169,11 +258,71 @@
 
     <div class="page__footer-wrapper">
       <footer class="page-footer" role="contentinfo">
-        page-footer
+        <div class="container">
+          <div class="page-footer__wrapper">
+            <div class="page-footer__logo">
+              <img src="img/logo.png" alt="logo">
+              <span>Казахская экспертиза проектов</span>
+            </div>
+            <div class="page-footer__wrapper-content">
+
+              <div class="page-footer__mail">
+                <div class="page-footer__mail-title">E-mail:</div>
+                <div class="page-footer__mail-text">info@archexpert.kz</div>
+              </div>
+
+              <div class="page-footer__adress">
+                <div class="page-footer__adress-title">Адрес:</div>
+                <div class="page-footer__adress-text">г.Алматы, б-р Бухар Жырау, уг.ул.Римского Корсакова д.10/1, оф.37</div>
+              </div>
+
+              <div class="page-footer__phone">
+                <div class="page-footer__phone-title">Телефон:</div>
+                <a href="tel:+77273007570" class="page-footer__phone-tel">+7 (727) 300-75-70</a>
+                <a href="tel:+77272929805" class="page-footer__phone-tel">+7 (727) 292-98-05</a>
+                <button class="btn  btn--footer  page-footer__btn" data-toggle="modal" data-target="#modal-demo-01">Заказать звонок</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-footer__copyright">copyright 2017 Все права сохранены</div>
       </footer>
 
     </div>
 
+  </div>
+
+  <div id="modal-demo-01" class="modal" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <span class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+          <h4 class="modal__title">
+            Закажите обратный звонок
+            <div>и наш менеджер свяжится с Вами в ближайшее время</div>
+          </h4>
+        </div>
+        <div class="modal__body">
+          <form action="b.php" class="form">
+            <label class="field-text">
+              <span class="field-text__name">Имя</span>
+              <div class="field-text__input-wrap  field-text__input-wrap-name">
+                <input class="field-text__input" type="text" name="name">
+              </div>
+            </label>
+
+            <label class="field-text">
+              <span class="field-text__name">Телефон</span>
+              <div class="field-text__input-wrap  field-text__input-wrap-phone">
+                <input class="field-text__input" type="tel" name="tel">
+              </div>
+            </label>
+            <button type="submit" class="btn btn--main form__btn">Заказать звонок</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
   <script>window.jQuery || document.write('<script src="js/jquery.3.1.1.min.js"><\/script>')</script>
   <script src="js/script.min.js"></script>

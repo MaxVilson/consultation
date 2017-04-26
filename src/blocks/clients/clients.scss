@@ -1,0 +1,31 @@
+// В этом файле должны быть стили только для БЭМ-блока clients, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Не пишите здесь другие селекторы.
+
+.clients {
+
+  &__title {
+    text-align: center;
+
+    @media (max-width: ($screen-sm)) {
+      font-size: 24px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+
+    @media (max-width: ($screen-md)) {
+      width: 90px;
+    }
+  }
+}

@@ -54,7 +54,10 @@
     "tabs": [],
     "container": [],
     "certificate": [],
-    "consultation": []
+    "consultation": [],
+    "about-us": [],
+    "clients": [],
+    "news": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
