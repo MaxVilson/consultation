@@ -592,22 +592,22 @@ pre {
   -moz-tab-size: 2;
        tab-size: 2; }
 .phone--dark {
-  background-image: url(../img/sprite-02537379424550712.png);
+  background-image: url(../img/sprite-016094449615327822.png);
   background-position: -24px -36px;
   width: 11px;
   height: 11px; }
 .phone {
-  background-image: url(../img/sprite-02537379424550712.png);
+  background-image: url(../img/sprite-016094449615327822.png);
   background-position: 0px -36px;
   width: 20px;
   height: 20px; }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-02537379424550712.png);
+  background-image: url(../img/sprite-016094449615327822.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px; }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-02537379424550712.png);
+  background-image: url(../img/sprite-016094449615327822.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px; }
@@ -888,7 +888,7 @@ a.btn--disabled {
       content: '';
       width: 20px;
       height: 20px;
-      background-image: url(../img/sprite-02537379424550712.png);
+      background-image: url(../img/sprite-016094449615327822.png);
       background-position: 0px -36px;
       width: 20px;
       height: 20px; }
@@ -2123,7 +2123,7 @@ a.pagination__item:hover, a.pagination__item:focus {
     margin-top: 10px; }
   .main-nav__tel:before{
     top: 6px;
-    background-image: url(../img/sprite-02537379424550712.png);
+    background-image: url(../img/sprite-016094449615327822.png);
     background-position: -24px -36px;
     width: 11px;
     height: 11px; }
