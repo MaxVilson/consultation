@@ -10,54 +10,30 @@
     "page-header": [],
     "page-footer": [],
     "logo": [],
-    "code": [],
-    "thumb": [],
-    "alert": [],
     "btn": [],
     "main-nav": [],
-    "to-top": [],
     "field-text": [
       "--error"
     ],
-    "field-checkbox": [
-      "__input-wrap--error"
-    ],
-    "field-radio": [
-      "__input-wrap--error"
-    ],
-    "field-toggler": [],
-    "field-file": [
-      "--error"
-    ],
-    "field-range": [],
-    "field-select": [
-      "--error"
-    ],
-    "field-actions": [],
     "form": [],
-    "dropdown": [],
     "menu": [],
     "label": [],
-    "loader": [],
-    "table": [],
-    "table-responsive": [],
-    "table-mobile-scroll": [],
     "owl-carousel": [],
-    "swipe": [],
-    "pagination": [],
-    "breadcrumbs": [],
     "nouislider": [],
     "burger": [],
     "media": [],
     "modal": [],
     "close": [],
-    "tabs": [],
     "container": [],
     "certificate": [],
     "consultation": [],
     "about-us": [],
     "clients": [],
-    "news": []
+    "news": [],
+    "services": [],
+    "advantages": [],
+    "about": [],
+    "contacts": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

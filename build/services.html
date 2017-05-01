@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Казахская экспертиза проектов</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+  <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+
+</head>
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header  page-header--inner">
+        <div class="page-header__shadow">
+          <div class="container">
+            <div class="page-header__wrapper">
+              <a href="#" class="logo  page-header__logo">
+                <picture>
+                  <source
+                  media="(max-width: 768px)"
+                  srcset="img/logo_sm.png">
+                  <img src="img/logo.png" alt="logo">
+                </picture>
+                <div class="logo__text">Казахская экспертиза<br> проектов</div>
+              </a>
+              <nav id="main-nav" class="main-nav" role="navigation">
+                <div id="main-nav-toggler" class="main-nav__toggler  burger  burger--dark">
+                  <span></span>
+                </div>
+                <ul class="main-nav__list">
+                  <li class="main-nav__item">
+                    <a href="index.html" class="main-nav__link  main-nav__link--dark">
+                      Главная
+                    </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="about.html" class="main-nav__link  main-nav__link--dark">
+                      О Компании
+                    </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="services.html" class="main-nav__link  main-nav__link--active  main-nav__link--dark">
+                      Услуги
+                    </a>
+                  </li>
+                  <li class="main-nav__item  main-nav__item--last">
+                    <a href="contacts.html" class="main-nav__link  main-nav__link--dark">
+                      Контакты
+                    </a>
+                  </li>
+                  <div class="main-nav__call">
+                    <a href="tel:+87076404775" class="main-nav__tel  main-nav__tel--dark">8 707 640 47 75</a>
+                    <button class="btn  btn--inner  main-nav__btn" data-toggle="modal" data-target="#modal-demo-01">Заказать звонок</button>
+                  </div>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main role="main">
+
+        <section class="services">
+          <div class="container">
+            <div class="services__wrapper">
+              <h2 class="services__title">Услуги</h2>
+              <p class="services__promo-text">
+                Услуги по комплексной вневедомственной экспертизе объектов строительства, комплексов, инженерных и транспортных коммуникаций, экспертиза технико-экономического обоснования, проектно-сметной  документации.
+              </p>
+              <div class="services__block">
+                <p class="services__text">
+                  Мы оказываем следующий комплекс услуг в области комплексной вневедомственной экспертизы:
+                </p>
+                <div class="services__item">
+                  <svg width="16" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#check"></use></svg>
+                  экспертиза проектно-сметной документации
+                </div>
+                <div class="services__item">
+                  <svg width="16" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#check"></use></svg>
+                  предэкспертная консультация и анализ проектных решений
+                </div>
+              </div>
+              <p class="services__text">
+                Качество наших услуг соответствует всем требованиям, предъявляемым контролирующими органами к экспертной организации, свидетельством чему является государственная аккредитация. Выполняя экспертизу проектно-сметной документации, мы работаем в соответствии с законодательством РК, при этом соблюдая сроки и условия договора, заключенного с Заказчиком.
+              </p>
+              <div class="services__wrapper-docs">
+                <a class="services__document" href="Введи адрес для скачки!">Список необходимой документации</a>
+                <a class="services__questionary" href="Введи адрес для скачки!">Анкета заказчика</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="advantages">
+          <div class="container">
+            <div class="advantages__wrapper">
+              <h2 class="advantages__title">Преимущества работы с нами</h2>
+              <ul class="advantages__list">
+                <li class="advantages__item">
+                  <div class="advantages__img">
+                    <img src="img/rocket.png" alt="advantages">
+                  </div>
+                  <span class="advantages__text">Быстрые сроки выдачи независимых экспертных заключений</span>
+                </li>
+                <li class="advantages__item">
+                  <div class="advantages__img">
+                    <img src="img/libra.png" alt="advantages">
+                  </div>
+                  <span class="advantages__text">Штат высокопрофессиональных экспертов</span>
+                </li>
+                <li class="advantages__item">
+                  <div class="advantages__img">
+                    <img src="img/people.png" alt="advantages">
+                  </div>
+                  <span class="advantages__text">Оптимальная стоимость услуг</span>
+                </li>
+                <li class="advantages__item">
+                  <div class="advantages__img">
+                    <img src="img/pins.png" alt="advantages">
+                  </div>
+                  <span class="advantages__text">Заключения, выданные в алматинском офисе, действительны на территории всей Республики Казахстан</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="consultation  consultation--inner">
+          <div class="container">
+            <div class="consultation__wrapper">
+              <h2 class="consultation__title">
+                Закажите бесплатную<br> <span>консультацию</span>
+              </h2>
+              <p class="consultation__text">
+                Оставьте Ваши данные и наш менеджер свяжется с Вами в ближайшее время
+              </p>
+
+              <form action="a.php" class="form">
+                <label class="field-text">
+                  <span class="field-text__name">Имя</span>
+                  <div class="field-text__input-wrap  field-text__input-wrap-name">
+                    <input class="field-text__input" type="text" name="name">
+                  </div>
+                </label>
+
+                <label class="field-text">
+                  <span class="field-text__name">Email</span>
+                  <div class="field-text__input-wrap  field-text__input-wrap-email">
+                    <input class="field-text__input" type="email" name="email">
+                  </div>
+                </label>
+
+                <label class="field-text">
+                  <span class="field-text__name">Телефон</span>
+                  <div class="field-text__input-wrap  field-text__input-wrap-phone">
+                    <input class="field-text__input" type="tel" name="tel">
+                  </div>
+                </label>
+
+                <label class="field-text">
+                  <span class="field-text__name">Сообщение</span>
+                  <div class="field-text__input-wrap  field-text__input-wrap-message">
+                    <textarea class="field-text__input"></textarea>
+                  </div>
+                </label>
+                <button type="submit" class="btn btn--main form__btn">Отправить</button>
+              </form>
+
+
+            </div>
+          </div>
+        </section>
+      </main>
+
+    </div>
+  </div>
+
+  <div class="page__footer-wrapper">
+    <footer class="page-footer" role="contentinfo">
+      <div class="container">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__logo">
+            <img src="img/logo.png" alt="logo">
+            <span>Казахская экспертиза проектов</span>
+          </div>
+          <div class="page-footer__wrapper-content">
+
+            <div class="page-footer__mail">
+              <div class="page-footer__mail-title">E-mail:</div>
+              <div class="page-footer__mail-text">E.Sergazinov1981@gmail.com</div>
+            </div>
+
+            <div class="page-footer__adress">
+              <div class="page-footer__adress-title">Адрес:</div>
+              <div class="page-footer__adress-text">г. Астана, пр.  Тәуелсіздік, 3, офис 502</div>
+            </div>
+
+            <div class="page-footer__phone">
+              <div class="page-footer__phone-title">Телефон:</div>
+              <a href="tel:77076404775" class="page-footer__phone-tel">+7 707 640 47 75</a>
+              <button class="btn  btn--footer  page-footer__btn" data-toggle="modal" data-target="#modal-demo-01">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-footer__copyright">copyright 2017 Все права сохранены</div>
+    </footer>
+
+  </div>
+
+  <div id="modal-demo-01" class="modal" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <span class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+          <h4 class="modal__title">
+            Закажите обратный звонок
+            <div>и наш менеджер свяжится с Вами в ближайшее время</div>
+          </h4>
+        </div>
+        <div class="modal__body">
+          <form action="b.php" class="form">
+            <label class="field-text">
+              <span class="field-text__name">Имя</span>
+              <div class="field-text__input-wrap  field-text__input-wrap-name">
+                <input class="field-text__input" type="text" name="name">
+              </div>
+            </label>
+
+            <label class="field-text">
+              <span class="field-text__name">Телефон</span>
+              <div class="field-text__input-wrap  field-text__input-wrap-phone">
+                <input class="field-text__input" type="tel" name="tel">
+              </div>
+            </label>
+            <button type="submit" class="btn btn--main form__btn">Заказать звонок</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>window.jQuery || document.write('<script src="js/jquery.3.1.1.min.js"><\/script>')</script>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,129 @@
+// В этом файле должны быть стили только для БЭМ-блока services, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Не пишите здесь другие селекторы.
+
+.services {
+  padding-bottom: 80px;
+  background-image: url(../img/header--inner.png);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font-family--headings;
+    text-align: center;
+  }
+
+  &__promo-text {
+    font-size: px-to-em(20);
+  }
+
+  &__block {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+    padding-left: 90px;
+    width: 100%;
+    max-width: 760px;
+    border: 1px solid $color-red;
+    border-radius: 3px;
+
+    @media (max-width: ($screen-md)) {
+      padding-top: 30px;
+      padding-right: 40px;
+      padding-bottom: 30px;
+      padding-left: 40px;
+    }
+  }
+
+  &__text {
+    font-size: px-to-em(16);
+  }
+
+  &__item {
+    font-size: px-to-em(18);
+
+    @media (max-width: ($screen-md)) {
+      margin-top: 10px;
+    }
+  }
+
+  &__wrapper-docs {
+    margin-top: 30px;
+
+    @media (max-width: ($screen-md)) {
+      justify-content: center;
+    }
+  }
+
+  &__document {
+    position: relative;
+    display: inline-block;
+    margin-right: 16px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    text-decoration: none;
+    color: $white;
+    background-color: #898788;
+    border-radius: 2px;
+
+    &:before {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      content: '';
+      @include sprite($download);
+    }
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: #000;
+      opacity: 0.3;
+    }
+
+    @media (max-width: ($screen-md)) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__questionary {
+    position: relative;
+    display: inline-block;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    text-decoration: none;
+    color: $white;
+    background-color: $color-red;
+    border-radius: 2px;
+
+    &:before {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      content: '';
+      @include sprite($download);
+    }
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: #000;
+      opacity: 0.3;
+    }
+  }
+}

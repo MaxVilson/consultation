@@ -1,0 +1,40 @@
+// В этом файле должны быть стили только для БЭМ-блока about, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Не пишите здесь другие селекторы.
+
+.about {
+
+  &__title {
+    text-align: center;
+  }
+
+  &__block {
+    clear: both;
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    margin-bottom: 40px;
+
+    &--right {
+      margin-left: 20px;
+      float: right;
+
+      @media (max-width: ($screen-sm)) {
+        margin-left: 0;
+      }
+    }
+
+    &--left {
+      margin-right: 20px;
+      float: left;
+
+      @media (max-width: ($screen-sm)) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__text {
+  }
+}

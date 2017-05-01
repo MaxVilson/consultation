@@ -43,6 +43,18 @@
     }
   }
 
+  &--dark {
+
+    > span {
+      background: #000;
+
+      &:before,
+      &:after {
+        background: #000;
+      }
+    }
+  }
+
   &--close {
 
     > span {

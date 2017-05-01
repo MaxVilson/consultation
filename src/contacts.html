@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Казахская экспертиза проектов</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header  page-header--inner">
+        <div class="page-header__shadow">
+          <div class="container">
+            <div class="page-header__wrapper">
+              <a href="#" class="logo  page-header__logo">
+                <picture>
+                  <source
+                  media="(max-width: 768px)"
+                  srcset="img/logo_sm.png">
+                  <img src="img/logo.png" alt="logo">
+                </picture>
+                <div class="logo__text">Казахская экспертиза<br> проектов</div>
+              </a>
+              <nav id="main-nav" class="main-nav" role="navigation">
+                <div id="main-nav-toggler" class="main-nav__toggler  burger  burger--dark">
+                  <span></span>
+                </div>
+                <ul class="main-nav__list">
+                  <li class="main-nav__item">
+                    <a href="index.html" class="main-nav__link  main-nav__link--dark">
+                      Главная
+                    </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="about.html" class="main-nav__link  main-nav__link--dark">
+                      О Компании
+                    </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="services.html" class="main-nav__link  main-nav__link--dark">
+                      Услуги
+                    </a>
+                  </li>
+                  <li class="main-nav__item  main-nav__item--last">
+                    <a href="contacts.html" class="main-nav__link  main-nav__link--active  main-nav__link--dark">
+                      Контакты
+                    </a>
+                  </li>
+                  <div class="main-nav__call">
+                    <a href="tel:+87076404775" class="main-nav__tel  main-nav__tel--dark">8 707 640 47 75</a>
+                    <button class="btn  btn--inner  main-nav__btn" data-toggle="modal" data-target="#modal-demo-01">Заказать звонок</button>
+                  </div>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main role="main">
+        <div class="container">
+          <section class="contacts">
+            <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2502.5467433822337!2d71.45247401612916!3d51.15370897957859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42458147e18104e7%3A0x55417c0527fefe4b!2z0L_RgNC-0YHQvy4g0KLQsNGD0LXQu9GB0LjQt9C00LjQuiAzLCDQkNGB0YLQsNC90LAgMDIwMDAwLCDQmtCw0LfQsNGF0YHRgtCw0L0!5e0!3m2!1sru!2sru!4v1493641262681" allowfullscreen></iframe>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <div class="page__footer-wrapper">
+    @@include('blocks/page-footer/page-footer.html')
+  </div>
+
+  @@include('blocks/modal/modal.html')
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

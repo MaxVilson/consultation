@@ -98,6 +98,10 @@ $transition-time:             0.3s !default;
     font-size: px-to-em(20);
     text-decoration: none;
 
+    &--dark {
+      color: $text-color;
+    }
+
     &:after {
       position: absolute;
       bottom: -4px;
@@ -106,7 +110,7 @@ $transition-time:             0.3s !default;
       width: 100%;
       height: 3px;
       background: $color-red;
-      transition: all .3s;
+      transition: all 0.3s;
 
       @media (max-width: $menu-desktop-width - 1) {
         display: none;
@@ -121,6 +125,18 @@ $transition-time:             0.3s !default;
     &:hover:after {
       transform: translateY(-8px);
     }
+
+    &--active {
+
+      &:after {
+        bottom: 4px;
+      }
+
+      &:hover:after {
+        transform: none;
+      }
+    }
+
 
     @media (max-width: ($screen-lg)) {
       font-size: px-to-em(14);
@@ -209,7 +225,7 @@ $transition-time:             0.3s !default;
     font-size: px-to-em(24);
     text-decoration: none;
     color: $white;
-    transition: all .4s;
+    transition: all 0.4s;
 
     &:hover {
       color: $color-red;
@@ -236,6 +252,14 @@ $transition-time:             0.3s !default;
     @media (max-width: $menu-desktop-width - 1) {
       padding-left: 15px;
       color: $text-color;
+    }
+
+    &--dark {
+      color: $text-color;
+
+      &:before {
+        @include sprite($phone-grey);
+      }
     }
   }
 

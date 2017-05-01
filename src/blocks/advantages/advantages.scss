@@ -1,0 +1,62 @@
+// В этом файле должны быть стили только для БЭМ-блока advantages, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Не пишите здесь другие селекторы.
+
+.advantages {
+  margin-bottom: 40px;
+  background-color: #770200;
+  color: $white;
+
+  &__title {
+    margin: 0;
+    padding-top: 40px;
+    text-align: center;
+
+    @media (max-width: ($screen-md)) {
+      font-size: px-to-em(24);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 60px;
+    padding: 0;
+    list-style: none;
+
+    @media (max-width: ($screen-lg)) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+    @media (max-width: ($screen-lg)) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__img {
+
+  }
+
+  &__text {
+    margin-left: 15px;
+    width: 340px;
+
+    @media (max-width: ($screen-md)) {
+      margin-top: 20px;
+      margin-left: 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+

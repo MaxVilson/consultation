@@ -28,10 +28,10 @@ $border-radius:               3px;
   color: $text-color;
   border-radius: $border-radius;
   border: 1px solid $gray-lighter;
-  background-color: $gray-lightest;
+  background-color: transparent;
   background-image: none;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
 
   &:hover,
   &:focus {
@@ -83,6 +83,17 @@ $border-radius:               3px;
       padding-right: 15px;
       padding-left: 15px;
       font-size: px-to-em(14);
+    }
+  }
+
+  &--inner {
+    color: $color-red;
+    border-color: $color-red;
+
+    &:hover {
+      color: $white;
+      background-color: $color-red;
+      border-color: $color-red;
     }
   }
 
